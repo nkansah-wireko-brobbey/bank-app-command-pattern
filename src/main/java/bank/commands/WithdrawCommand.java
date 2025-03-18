@@ -3,7 +3,7 @@ package bank.commands;
 import bank.dao.IAccountDAO;
 import bank.domain.Account;
 
-class WithdrawCommand implements ICommand {
+public class WithdrawCommand implements ICommand {
 
     private IAccountDAO accountDAO;
     private double amount;

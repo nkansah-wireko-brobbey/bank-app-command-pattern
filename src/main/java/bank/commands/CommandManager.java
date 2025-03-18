@@ -6,9 +6,9 @@ public class CommandManager implements ICommandManager {
     
     private Stack<ICommand> commandHistoryStack;
     private Stack<ICommand> undoCommandStack;
-    public CommandManager(Stack<ICommand> commandHistoryStack, Stack<ICommand> undoCommandStack) {
-		this.commandHistoryStack = commandHistoryStack;
-		this.undoCommandStack = undoCommandStack;
+    public CommandManager() {
+		this.commandHistoryStack = new Stack<>();
+		this.undoCommandStack = new Stack<>();
 	}
 
     @Override
